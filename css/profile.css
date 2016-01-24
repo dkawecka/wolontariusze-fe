@@ -1,0 +1,139 @@
+#prolife-photo {
+	height:22rem;
+	display: block;
+	margin: 1rem auto;
+	border-radius: 100%;
+}
+#profile-name{
+	margin-top: 2rem;
+}
+#profile-grow-title {
+	margin: 4rem auto;
+}
+#profile-stone-box {
+	position:relative;
+	text-align: center;
+}
+#prolife-stone-img {
+	height:10rem;
+	display: block;
+	margin: 1rem auto;
+}
+#profile-stone-tasks{
+	line-height: 0.9;
+	position: absolute;
+	top: 4rem;
+	left: 50%;
+	-webkit-transform: translate(-50%,0%);
+	-ms-transform: translate(-50%,0%);
+	-o-transform: translate(-50%,0%);
+	transform: translate(-50%,0%);
+}
+#profile-stone-tasks>b{
+	color: #fff;
+}
+#profile-stone-tasks-nr {
+	font-size: 2.75rem;
+}
+#prolife-contant-ico {
+	height: 3rem;
+	float: left;
+	margin: 0 2rem 0 3rem;
+}
+#prolife-contant-data {
+	line-height: 3rem;
+}
+.profile-ribon {
+	margin: 1rem 0 0 0;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-align-content: stretch;
+	-ms-flex-line-pack: stretch;
+	align-content: stretch;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.profile-ribon-cell {
+	-webkit-flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	-webkit-align-self: auto;
+	-ms-flex-item-align: auto;
+	align-self: auto;
+	background-color: #00A8D8;
+	height: 4rem;
+	margin: 0 0 0 1.4%;
+	position: relative;
+}
+.profile-ribon-cell:first-child{
+	border-radius: 2rem 0 0 2rem;
+	margin-left: 0;
+}
+.profile-ribon-cell:last-child{
+	border-radius: 0 2rem 2rem 0;
+}
+.profile-ribon-cell:active {
+	background-color: #0082BD;
+}
+.profile-ribon-cell.active {
+	background-color: #0082BD;
+}
+#profile-ribon-txt {
+	color:#fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+#profilie-insta-ico{
+	height: 2rem;
+	float: left;
+	margin: 2rem 1rem 0 0;
+}
+
+.profile-insta-photo {
+	width: 100%;
+	min-height: 13rem;
+	border-radius: 1rem;
+	background-color:#00A8D8;
+	position: relative;
+	overflow: hidden;
+}
+.profile-insta-photo:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+.square-content{
+    position:absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+}
+.square-content div {
+   display: table;
+   width: 100%;
+   height: 100%;
+}
+.square-content h1 {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: white
+}
