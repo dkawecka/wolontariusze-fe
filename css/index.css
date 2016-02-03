@@ -8,7 +8,7 @@ b, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
+article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
     margin: 0;
@@ -157,13 +157,14 @@ Nav ul li:first-child:after { content: ""; }
 /*---------------FORMS-----------------------*/
 
 .form {
-	width: 100%;
+	width: 80%;
 	border: 1px solid #0082BD;
 	border-radius: 2rem;
 	height: 2rem;
 	display: inline-block;
 	line-height: 5rem;
 	padding: 0 1rem 0 1rem;
+	margin-top: 0.5rem;
 	box-sizing:border-box;
 }
 #menu-search-submit {
@@ -193,7 +194,7 @@ Nav ul li:first-child:after { content: ""; }
 /*FOOTER*/
 footer {
 	margin: 4rem 0 0 0;
-	background-color: #00A8D8; 
+	background-color: #00A8D8;
 	width: 100%;
 	height: 15rem;
 }
