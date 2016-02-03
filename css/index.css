@@ -36,7 +36,7 @@ time, mark, audio, video {
 .group:before,
 .group:after { content:""; display:table; }
 .group:after { clear:both;}
-.group { zoom:1;  For IE 6/7  }
+.group { zoom:1; /* For IE 6/7 */ }
 
 /*  GRID OF FOUR  */
 .span_4_of_4 {
@@ -128,8 +128,8 @@ nav {
 	height: 5rem;
 }
 /*-------------------MENU---------------------*/
-Nav ul {
-	list-style: outside none none
+nav ul {
+	list-style: outside none none;
 	float:right;
 }
 nav ul li {
@@ -143,17 +143,17 @@ nav ul li a {
 	line-height: 5rem;
 	white-space: nowrap;
 }
-Nav ul li:before {
+nav ul li:before {
 	content: '';
 }
-Nav ul li:after {
+nav ul li:after {
 	content: '|';
 	color:#0082BD;
 	position: relative;
 	top:-3px;
 	margin: 0 0.15rem 0 0.15rem;
 }
-Nav ul li:first-child:after { content: ""; }
+nav ul li:first-child:after { content: ""; }
 /*---------------FORMS-----------------------*/
 
 .form {
