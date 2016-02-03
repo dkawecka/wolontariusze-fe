@@ -157,7 +157,7 @@ nav ul li:first-child:after { content: ""; }
 /*---------------FORMS-----------------------*/
 
 .form {
-	width: 80%;
+	width: 100%;
 	border: 1px solid #0082BD;
 	border-radius: 2rem;
 	height: 2rem;
@@ -167,6 +167,21 @@ nav ul li:first-child:after { content: ""; }
 	margin-top: 0.5rem;
 	box-sizing:border-box;
 }
+
+.login {
+	width: 70%;
+	line-height: 2rem;
+}
+
+.label {
+display: inline-block;
+color: #0082BD;
+}
+
+.submit {
+	margin: 1em 0 0 5em;
+}
+
 #menu-search-submit {
 	position: absolute;
 	top:2.5rem;
