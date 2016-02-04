@@ -26,7 +26,7 @@
 							<li><a href="#">Start</a></li>
 						</ul>
 					</div>
-					<div class="col span_1_of_4" style="position:relative">
+					<div class="col span_1_of_4 search" style="position:relative">
 						<form>
 							<input type="text" class="form" id="menu-search-box">
 							<input type="image" src="img/search.svg" id="menu-search-submit">
@@ -138,7 +138,10 @@
 			</div>
 		</div>
 	</article>
-
+	<div id="alert-err" class="alert-on">
+		<h2>Что-то пошло плохо</h2>
+		<img src="img/cross.svg" id="alert-cross" onclick="document.getElementById('alert-err').className='alert-off'">
+	</div>
 	<footer>
 
 	</footer>
