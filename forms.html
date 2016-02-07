@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="css/index.css" />
   <link rel="stylesheet" type="text/css" href="css/profile.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
 
 </head>
 <body>
@@ -38,18 +39,35 @@
   </header>
   <article>
     <header class="THE-margin">
-      <h1 id="THE-title">Aktywacja profilu</h1>
+      <h1 id="THE-title">Logowanie</h1>
     </header>
       <div class="THE-margin" id="THE-body">
       <div class="section group">
         <div class="col span_2_of_4">
-           <form action="#" method="get">
-           <label for="pass1" class="label">Ustaw hasło</label>
-           <input type="password" name="pass" id="pass1" class="form"><br>
-           <label for="pass2" class="label">Powtórz hasło</label>
-           <input type="password" name="pass2" id="pass2" class="form"><br>
-           <input type="submit" class="button" value="Wejdź" class="submit"><div id="button-clear"></div>
+          <form action="#" method="get">
+           <label for="name">Imię</label>
+           <input type="text" name="name"><br>
+           <label for="land">Kraj</label>
+           <input type="password" name="land"><br>
+           <label for="lang">Języki</label>
+           <select name="lang">
+             <option value="polski">Volvo</option>
+             <option value="programowania">Saab</option>
+             <option value="miłości">Fiat</option>
+             <option value="farerski">Audi</option>
+           </select>
+           <label>Załaduj foto, czy coś</label>
+          <input type="file" name="pic" accept="image/*">
+          <fieldset>
+            <legend>Preferowany kontakt</legend>
+            <input type="radio" class="form-radio" name="animal" value="Cat"><span>Telefon</span><br>
+            <input type="radio" class="form-radio" name="animal" value="Dog"><span>E-Mail</span><br>
+            <input type="radio" class="form-radio" name="animal" value="Bird"><span>Gołąb</span><br>
+          </fieldset>
+          <textarea name="message" rows="10" cols="30"></textarea>
+          <input type="submit" value="Wejdź" class="button"><div id="button-clear"></div>
           </form>
+          <button type="button" onclick="alert('Hello World!')">Click Me!</button><div id="button-clear"></div>
         </div>
       </div>
     </div>

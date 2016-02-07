@@ -64,12 +64,11 @@ h1 {
 h2 {
 	margin: 1rem 0 0 0;
 }
-h2,p,b,a,ul,span{
+h2,p,b,a,ul,span,label,button,.button,legend{
 	font-size: 1.4rem;
 }
-h2,a{
-	color:#0082BD;
-	font-weight: 600;
+small{
+	font-size: 0.7rem;
 }
 p,ul,span {
 	font-weight: 400;
@@ -78,9 +77,13 @@ p,ul{
 	color:#000;
 	text-align: justify;
 }
-b,h1{
+b,h1,label,h2,a,legend{
 	color:#0082BD;
 	font-weight: 600;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
 }
 ul{
 	margin-left:5rem;
@@ -150,19 +153,54 @@ nav ul li:after {
 nav ul li:first-child:after { content: ""; }
 /*---------------FORMS-----------------------*/
 
-.form {
+input, select, textarea,button {
 	width: 100%;
 	border: 1px solid #0082BD;
 	border-radius: 2rem;
 	height: 2rem;
 	display: inline-block;
-	line-height: 5rem;
 	padding: 0 1rem 0 1rem;
-	margin-top: 0.5rem;
+	margin: 0.5rem 0 0.5rem 0;
 	box-sizing:border-box;
 }
+.form-radio{
+	display: inline-block;
+	width: auto;
+	line-height: 1.4rem;
+	margin: 0.5rem;
+
+}
+textarea{
+	height: 13rem;
+	padding: 1rem;
+}
+.button, button{
+	width: 50%;
+	height: 4rem;
+	color: #FFF;
+	background: #0082BD none repeat scroll 0% 0%;
+	border: medium none;
+	float: right;
+	margin-top: 2rem;
+}
+form:after, button:after,form:before, button:before{
+	content: <div id="button-clear"></div>
+}
+#button-clear {
+ content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+  width: 100%;
+}
 #menu-search-submit {
+	width:auto;
+	border:none;
 	position: absolute;
+	padding: 0;
+	margin: 0;
 	top:2.4rem;
 	right: 1rem;
 	-webkit-transform: translate(0%,-50%);
@@ -183,6 +221,7 @@ nav ul li:first-child:after { content: ""; }
 	background-color: #fff;
 	border-radius: 2rem;
 	padding: 1rem;
+	min-height: 30rem;
 }
 
 /*FOOTER*/
@@ -231,6 +270,11 @@ footer {
 	transition: transform 0.5s ease;
 }
 /*------RESPONSIVE---------------*/
+@media only screen and (min-width: 1600px) {
+	html{
+		font-size: 17px;
+	}
+}
 @media only screen and (max-width: 1200px) {
 	html{
 		font-size: 13px;

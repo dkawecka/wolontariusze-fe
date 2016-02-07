@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <title>Góra Dobra - Portal wolontariuszy Światowych Dmi Młodzieży</title>
+  <meta charset="UTF-8" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=latin-ext' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <link rel="stylesheet" type="text/css" href="css/job.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <header>
+    <div class="THE-margin">
+      <img src="img/logo.svg" id="logo">
+    </div>
+    <nav>
+      <div class="THE-margin">
+        <div class="section group">
+          <div class="col span_3_of_4">
+            <ul>
+              <li><a href="#">Wyloguj</a></li>
+              <li><a href="#">Ustawienia</a></li>
+              <li><a href="#">Witaj Lorem</a></li>
+              <li><a href="#">Bank pracy</a></li>
+              <li><a href="#">Start</a></li>
+            </ul>
+          </div>
+          <div class="col span_1_of_4 search" style="position:relative">
+            <form>
+              <input type="text" class="form" id="menu-search-box">
+              <input type="image" src="img/search.svg" id="menu-search-submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <article>
+    <header class="THE-margin">
+      <h1 id="THE-title">Edytuj zadanie</h1>
+  </header>
+      <div class="THE-margin" id="THE-body">
+      <div class="section group">
+        <div class="col span_2_of_4">
+          <label for="name">Tytuł:</label>
+          <input type="text" name="name" value="Posprzątaj po imprezie">
+          <label for="name">Opis</label>
+          <textarea name="about"> Plesuada viverra suspendisse class venenatis in ante primis venenatis mi rutrum volutpat velit congue condimentum at a integer ridiculus ut eget platea urna. Cras leo adipiscing sagittis adipiscing facilisi a conubia ipsum parturient mattis suspendisse mi rutrum at egestas cum erat augue facilisis quisque fusce at. Arcu ut etiam dis ad a sed sem convallis turpis id quisque pulvinar penatibus lobortis non. Adipiscing metus nullam vivamus tellus a a a es
+          </textarea>
+          <label for="name">Czas:</label>
+          <input type="text" name="name" value="1.04.2016r.">
+          <label for="name">Trwanie:</label>
+          <div class="section group">
+            <div class="col span_2_of_4">
+              <input type="text" name="name" value="3">
+            </div>
+            <div class="col span_2_of_4">
+              <select name="lang">
+                <option value="hour">godziny</option>
+                <option value="day">dni</option>
+                <option value="week">tygodnie</option>
+                <option value="end">Do ŚDM</option>
+              </select>
+            </div>
+          </div>
+          <label for="name">Miejsce:</label>
+          <input type="text" name="name" value="Biuro ŚDM, ul. Kanonicza 14, Stare Miasto, Kraków">
+        </div>
+        <div class="col span_2_of_4">
+          <iframe id="job-map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=19.935384392738342%2C50.05543736950729%2C19.939493536949158%2C50.05726620683714&amp;layer=mapnik&amp;marker=50.05635179688567%2C19.93743896484375" style="border: 1px solid black"></iframe>
+        </div>
+      </div>
+      <div class="section group">
+        <div class="col span_4_of_4">
+          <h1>Wolontariusze:</h1>
+        </div>
+      </div>
+      <div class="section group">
+        <div class="col span_2_of_4">
+          <div id="job-volont-list">
+            <img src="img/profile/face.svg" id="job-list-ico"><div><a href="index.html"><b id="job-list-name">Lorem Ipsum</b></a><a href="#"><small id="job-edit-delete"><i>Usuń</i></small></a></div>
+          </div>
+          <div id="job-volont-list">
+            <img src="img/profile/face.svg" id="job-list-ico"><div><a href="index.html"><b id="job-list-name">Dolor Seamet</b></a><a href="#"><small id="job-edit-delete"><i>Usuń</i></small></a></div>
+          </div>
+          <div id="job-volont-list">
+            <img src="img/profile/add.svg" id="job-list-ico"><div><h2 id="job-list-name"><i>Wakat</i></h2></div>
+          </div>
+        </div>
+        <div class="col span_1_of_4">
+          <label for="name">Limit:</label>
+          <input type="text" name="name" value="3">
+        </div>
+        <div class="col span_2_of_4">
+          <label for="name">Dodaj wolontariusza</label>
+          <input type="text" name="name" value="3">
+          <button>Dodaj</button><div id="button-clear"></div>
+        </div>
+      </div>
+      <div class="section group">
+        <div class="col span_4_of_4">
+          <a href="job-edit.html"><button>Zapisz</button><div id="button-clear"></div></a>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <footer>
+
+  </footer>
+
+</body>
+</html>
