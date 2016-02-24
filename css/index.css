@@ -64,7 +64,7 @@ h1 {
 h2 {
 	margin: 1rem 0 0 0;
 }
-h2,p,b,a,ul,span,label,button,.button,legend{
+h2,p,b,a,ul,span,label,button,input[type="submit"],legend{
 	font-size: 1.4rem;
 }
 small{
@@ -113,6 +113,20 @@ body {
 .THE-margin {
 	margin: auto;
 	width: 64rem;
+	padding: 0 1rem;
+	box-sizing:border-box;
+}
+/*Content*/
+#THE-title{
+	margin: 2rem 0;
+	color:#fff;
+}
+#THE-body {
+	background-color: #fff;
+	border-radius: 2rem;
+	padding: 2rem 1rem;
+	min-height: 30rem;
+	box-sizing:border-box;
 }
 /*HEAD*/
 #logo {
@@ -124,6 +138,7 @@ nav {
 	width: 100%;
 	height: 5rem;
 }
+
 /*-------------------MENU---------------------*/
 nav ul {
 	list-style: outside none none;
@@ -174,26 +189,23 @@ textarea{
 	height: 13rem;
 	padding: 1rem;
 }
-.button, button{
+button, input[type="submit"]{
 	width: 50%;
 	height: 4rem;
 	color: #FFF;
 	background: #0082BD none repeat scroll 0% 0%;
 	border: medium none;
 	float: right;
-	margin-top: 2rem;
-}
-form:after, button:after,form:before, button:before{
-	content: <div id="button-clear"></div>
+	margin: 2rem 0;
 }
 #button-clear {
- content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
-  width: 100%;
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+	width: 100%;
 }
 #menu-search-submit {
 	width:auto;
@@ -212,18 +224,6 @@ form:after, button:after,form:before, button:before{
 #menu-search-box {
 	margin:1.4rem 0 1.5rem 0;
 }
-/*Content*/
-#THE-title{
-	margin: 2rem 0 2rem 0;
-	color:#fff;
-}
-#THE-body {
-	background-color: #fff;
-	border-radius: 2rem;
-	padding: 1rem;
-	min-height: 30rem;
-}
-
 /*FOOTER*/
 footer {
 	margin: 4rem 0 0 0;

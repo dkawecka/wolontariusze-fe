@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <title>Góra Dobra - Portal wolontariuszy Światowych Dmi Młodzieży</title>
+  <meta charset="UTF-8" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=latin-ext' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <link rel="stylesheet" type="text/css" href="css/settings.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+</head>
+<body>
+  <header>
+    <div class="THE-margin">
+      <img src="img/logo.svg" id="logo">
+    </div>
+    <nav>
+      <div class="THE-margin">
+        <div class="section group">
+          <div class="col span_3_of_4">
+            <ul>
+              <li><a href="#">Wyloguj</a></li>
+              <li><a href="settings.html">Ustawienia</a></li>
+              <li><a href="#">Witaj Lorem</a></li>
+              <li><a href="#">Bank pracy</a></li>
+              <li><a href="#">Start</a></li>
+            </ul>
+          </div>
+          <div class="col span_1_of_4 search" style="position:relative">
+            <form>
+              <input type="text" class="form" id="menu-search-box">
+              <input type="image" src="img/search.svg" id="menu-search-submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <article>
+    <header class="THE-margin">
+      <h1 id="THE-title">Ustawienia</h1>
+    </header>
+      <div class="THE-margin" id="THE-body">
+      <!-- BLOK USTAWIEŃ -->
+      <div class="section group">
+        <div class="col span_4_of_4" id="setting-title" onclick="if (document.getElementById('set-1').className.match('section group setting-hide')) { document.getElementById('set-1').className='section group setting-show'; } else { document.getElementById('set-1').className='section group setting-hide'; }; if (document.getElementById('set-arr-1').className.match('setting-arrow down')) { document.getElementById('set-arr-1').className='setting-arrow up'; } else { document.getElementById('set-arr-1').className='setting-arrow down'; }">
+          <h1>Profil Publiczny</h1>
+          <span class="blue-line"></span>
+          <img src="img/arrow.svg" id="set-arr-1" class="setting-arrow down">
+        </div>
+      </div>
+      <div class="section group setting-hide" id="set-1">
+        <form action="#" method="get">
+          <div class="col span_2_of_4">
+              <label for="">Imię i nazwisko</label>
+              <input type="text" placeholder="Lorem Ipsum">
+              <label for="">Kraj</label>
+              <input type="text" placeholder="Wyspy Owcze">
+              <label for="">Wiek</label>
+              <div class="section group spin">
+                <div class="col span_2_of_4">
+                  <input type="text" value="18" min="16" max="60" class="form txar">
+                </div>
+                <div class="col span_2_of_4">                
+                  <img src="img/arrow.svg" class="number-down"><img src="img/arrow.svg" class="number-up">
+                </div>
+              </div>
+
+          </div>
+          <div class="col span_2_of_4">
+             <input type="submit" value="Zapisz">
+          </div>
+          <div class="section group">
+            <div class="col span_4_of_4">
+              <label for="">O mnie</label>
+              <textarea name="" id="" cols="30" rows="10" class="form-txar" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ut consequatur quos repudiandae saepe libero odit neque sequi, voluptas maxime, culpa ducimus ad beatae eius. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro veritatis rerum pariatur, nam autem, aspernatur omnis dolor praesentium nisi repellendus at tenetur labore quisquam dolorum!"></textarea>
+            </div>
+          </div
+        </form>
+      </div>
+      <!-- BLOK USTAWIEŃ -->
+      <div class="section group">
+        <div class="col span_4_of_4" id="setting-title" onclick="if (document.getElementById('set-2').className.match('section group setting-hide')) { document.getElementById('set-2').className='section group setting-show'; } else { document.getElementById('set-2').className='section group setting-hide'; }; if (document.getElementById('set-arr-2').className.match('setting-arrow down')) { document.getElementById('set-arr-2').className='setting-arrow up'; } else { document.getElementById('set-arr-2').className='setting-arrow down'; }">
+          <h1>Dane Kontaktowe</h1>
+          <span class="blue-line"></span>
+          <img src="img/arrow.svg" id="set-arr-2" class="setting-arrow down">
+        </div>
+      </div>
+      <div class="section group setting-hide" id="set-2">
+        <form action="#" method="get">
+          <div class="col span_2_of_4">
+              <label for="">Imię i nazwisko</label>
+              <input type="text" placeholder="Lorem Ipsum">
+              <label for="">Kraj</label>
+              <input type="text" placeholder="Wyspy Owcze">
+          </div>
+          <div class="col span_2_of_4">
+             <input type="submit" value="Zapisz">
+          </div>
+        </form>
+      </div>
+      <!-- BLOK USTAWIEŃ -->
+      <div class="section group">
+        <div class="col span_4_of_4" id="setting-title" onclick="if (document.getElementById('set-3').className.match('section group setting-hide')) { document.getElementById('set-3').className='section group setting-show'; } else { document.getElementById('set-3').className='section group setting-hide'; }; if (document.getElementById('set-arr-3').className.match('setting-arrow down')) { document.getElementById('set-arr-3').className='setting-arrow up'; } else { document.getElementById('set-arr-3').className='setting-arrow down'; }">
+          <h1>Ustawienia Strony</h1>
+          <span class="blue-line"></span>
+          <img src="img/arrow.svg" id="set-arr-3" class="setting-arrow down">
+        </div>
+      </div>
+      <div class="section group setting-hide" id="set-3">
+        <form action="#" method="get">
+          <div class="col span_2_of_4">
+              <label for="">Imię i nazwisko</label>
+              <input type="text" placeholder="Lorem Ipsum">
+              <label for="">Kraj</label>
+              <input type="text" placeholder="Wyspy Owcze">
+          </div>
+          <div class="col span_2_of_4">
+             <input type="submit" value="Zapisz">
+          </div>
+        </form>
+      </div>
+    </div>
+  </article>
+
+  <footer>
+
+  </footer>
+
+</body>
+<script>
+    var buttonNumber = (function () {
+      "use strict";
+
+      var _init = function () {
+        $('.spin').each(function() {
+          var $input = $(this).find('input:text');
+          var $minus = $(this).find('.number-down');
+          var $plus = $(this).find('.number-up');
+          var min = parseInt($input.attr('min'), 10);
+          var max = parseInt($input.attr('max'), 10);
+
+          if (isNaN(min)) {
+            min = 0;
+          }
+          if (isNaN(max)) {
+            max = Number.POSITIVE_INFINITY;
+          }
+
+          $minus.on('click', function(e) {
+            e.preventDefault();
+
+            var currentVal = parseInt($input.val(), 10);
+            if (currentVal > min && !isNaN(currentVal)) {
+              $input.val(currentVal - 1);
+            } else {
+              $input.val(min)
+            }
+          });
+          $plus.on('click', function(e) {
+            e.preventDefault();   
+
+            var currentVal = parseInt($input.val(), 10);
+            if (isNaN(currentVal)) {
+              currentVal = min;         
+            } 
+            if (currentVal < max) { 
+              $input.val(currentVal+1)
+            } else {
+              $input.val(max);
+            }
+          });
+        })
+      };
+
+      return {
+        init: _init
+      }
+    })();
+    $(function() {
+      buttonNumber.init();
+    })
+  </script>
+</html>
