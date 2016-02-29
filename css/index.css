@@ -18,6 +18,8 @@ time, mark, audio, video {
 		font-size: 100%;
 		vertical-align: baseline;
 		background: transparent;
+		box-sizing:border-box;
+
 }
 /* -----------GRID---------------------*/
 .section {
@@ -59,16 +61,16 @@ html {
 	}
 h1 {
 	margin: 1rem 0 1rem 0;
-	font-size: 2.75rem;
+	font-size: 2.5rem;
 }
 h2 {
 	margin: 1rem 0 0 0;
 }
 h2,p,b,a,ul,span,label,button,input[type="submit"],legend{
-	font-size: 1.4rem;
+	font-size: 1.25rem;
 }
 small{
-	font-size: 0.7rem;
+	font-size: 0.5rem;
 }
 p,ul,span {
 	font-weight: 400;
@@ -114,7 +116,7 @@ body {
 	margin: auto;
 	width: 64rem;
 	padding: 0 1rem;
-	box-sizing:border-box;
+	position: relative;
 }
 /*Content*/
 #THE-title{
@@ -132,6 +134,14 @@ body {
 #logo {
 	margin: 2rem 0 2rem 0;
 	height: 8em;
+	z-index: 1;
+}
+#egg {
+	height: 38rem;
+	position: absolute;
+	bottom: 0.25rem;
+	left:-20.5rem;
+	z-index: -1;
 }
 nav {
 	background-color: #f4f4f4;
@@ -142,10 +152,11 @@ nav {
 /*-------------------MENU---------------------*/
 nav ul {
 	list-style: outside none none;
-	float:right;
+	float:left;
+	margin: 0;
 }
 nav ul li {
-	float: right;
+	float: left;
 }
 nav ul li a {
 	text-transform: uppercase;
@@ -163,9 +174,9 @@ nav ul li:after {
 	color:#0082BD;
 	position: relative;
 	top:-3px;
-	margin: 0 0.15rem 0 0.15rem;
+	margin: 0 0.25rem 0 0.25rem;
 }
-nav ul li:first-child:after { content: ""; }
+nav ul li:last-child:after { content: ""; }
 /*---------------FORMS-----------------------*/
 
 input, select, textarea,button {
@@ -183,7 +194,6 @@ input, select, textarea,button {
 	width: auto;
 	line-height: 1.4rem;
 	margin: 0.5rem;
-
 }
 textarea{
 	height: 13rem;
@@ -292,44 +302,23 @@ footer {
 	.span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 100%; }
 	.span_1_of_4 { width: 50%; }
 	.THE-margin {margin: auto; width: 85%;}
-	nav {
-		height: inherit;
-		max-height: 50rem;
-		overflow: hidden;
-	}
-	nav ul {
-		float: left;
-		list-style: outside none none;
-		margin:2rem 0;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-flex-direction: column-reverse;
-		-ms-flex-direction: column-reverse;
-		flex-direction: column-reverse;
-	}
-	nav ul li {height: 3rem;	}
-	nav ul li:before {
-		content: '';
-	}
-	nav ul li:after {
-		content: '';
-	}
-	nav ul li:first-child:after { content: ""; }
-	.search {display: none;}
+	nav {height: inherit;}
+	nav ul li a{line-height: 3rem;}
+	#menu-search-box{ margin: 0 0 0.5rem 0;}
+	#menu-search-submit { top: 1rem;}
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
 	html{
 		font-size: 11px;
 	}
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
 	html{
 		font-size: 9px;
 	}
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
 	html{
-		font-size: 5px;
+		font-size: 8px;
 	}
 }
